@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondTestView" customModule="XibLoad" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="3cq-0P-AUN" id="ukd-Zl-byf"/>
+                <outlet property="titleLbl" destination="5Hz-ZW-Hz0" id="TPM-em-a9t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hz-ZW-Hz0">
+                    <rect key="frame" x="16" y="20" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-0P-AUN">
+                    <rect key="frame" x="142.5" y="49" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="PaW-Df-9TL"/>
+                        <constraint firstAttribute="height" constant="30" id="igu-hj-K7g"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="onButton:" destination="-1" eventType="touchUpInside" id="lmi-U4-50w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Hz-ZW-Hz0" secondAttribute="trailing" constant="16" id="AAp-uz-LYr"/>
+                <constraint firstItem="5Hz-ZW-Hz0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LJ9-6F-ZhX"/>
+                <constraint firstItem="3cq-0P-AUN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="THk-AT-Yve"/>
+                <constraint firstItem="3cq-0P-AUN" firstAttribute="top" secondItem="5Hz-ZW-Hz0" secondAttribute="bottom" constant="8" id="WSj-1y-aGI"/>
+                <constraint firstItem="5Hz-ZW-Hz0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="v27-Ta-6vl"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-104.7976011994003"/>
+        </view>
+    </objects>
+</document>
